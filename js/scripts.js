@@ -15,9 +15,23 @@
 // alert(favFood + ingrediants);
 // confirm(favMovie + movieYear);
 
-let yourName = "What is your first name?";
-console.log(prompt(yourName));
-let yourLastName = "What is your last name?";
-alert(prompt(yourLastName));
-let yourBirthday = "When is your birthday?"
-confirm(prompt(yourBirthday));
+// let yourName = "What is your first name?";
+// console.log(prompt(yourName));
+// let yourLastName = "What is your last name?";
+// alert(prompt(yourLastName));
+// let yourBirthday = "When is your birthday?"
+// confirm(prompt(yourBirthday));
+
+let yourName = "What is your name?";
+prompt(yourName);
+let favColor = Prompt('give me your fav color', '...');
+
+switch(favColor.upperLowerCase) { //normalize the data
+  case 'blue';
+    alert(`${favColor} is my favorite too!`);
+    break;
+  //...  
+  default:
+      alert(`Hey${name}, that's not a valid option.`)
+
+}
