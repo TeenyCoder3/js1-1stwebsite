@@ -1,37 +1,70 @@
-// var myName = "Angelica";
 
-// console.log("I would like to learn all I can about Javascript and get all the knowledge I need to know about the Javascript. I hope this class will be challenging but fun :) Also my favorite hobby is Taekwondo, playing video games, or web developement.");
+// let inside = true;
 
-// var myName = "Angelica";
-// let birthday = newDate ('3.31.2004');
-// const goal = 'To become a developer';
-// // console.log(name, birthday, goal);
+// if(inside){
+//   console.log('i am inside')
+// } else {
+//   console.log('i am not inside')
+// }
 
-// let favMovie = 'Jumanji';
-// let favFood = 'steak';
-// const movieYear = new Date(1/1/2017);
-// const ingrediants = ['steak', 'rice', 'fries', 'fish'];
+//condition ? expression1 : expression2
 //
-// alert(favFood + ingrediants);
-// confirm(favMovie + movieYear);
+// example2 = inside ? "i am inside" : "i am not inside"
+// //console.log(example2)
+//
+// let number = 10
+//
+// let number > 20 ? "number is greater than 20" : "number is less than 20"
+// //console.log((number > 20) ? "number is greater than 20" : "number is less than 20")
+// console.log(number)
+//
+// let number = 5;
+//
+// console.log(number > 10 ? "number is greater than 10" : "number is less than 10")
+//
+//let name = false;
+//let email = true;
+//
+// if(name) {
+//   console.log("I have name")
+// }
+// else if (email){
+//   console.log("I have email")
+// }
+// else {
+//   console.log("I have none")
+// }
 
-// let yourName = "What is your first name?";
-// console.log(prompt(yourName));
-// let yourLastName = "What is your last name?";
-// alert(prompt(yourLastName));
-// let yourBirthday = "When is your birthday?"
-// confirm(prompt(yourBirthday));
+//name ? "i have name" : email ? "i have email" :  "i have none"
+//console.log(name ? "i have name" : email ? "i have email" :  "i have none")
 
-let yourName = "What is your name?";
-prompt(yourName);
-let favColor = Prompt('give me your fav color', '...');
+// let iAmHungry = true;
+// let money = 5;
+//
+// iAmHungry ? ((money > 10) ? "i am hungry and i have more than 10" : "i am hungry and i have less than 10") : ((money > 10) ? "i am not hungry and i have more than 10" : "i am not hungry and i have less than 10" );
+// //
+// if (iAmHungry) {
+//   if (money > 10) {
+//     'i am hungry and i have more than 10'
+//   }
+//   else {
+//     'i am hungry and i have less than 10'
+//   }
+//   else {
+//   if (money > 10) {
+//     ' i am not hungry and i have more than 10'
+//   }
+//   else {
+//    'i am not hungry and i have less than 10'
+//   }
+//   }
+// }
 
-switch(favColor.upperLowerCase) { //normalize the data
-  case 'blue';
-    alert(`${favColor} is my favorite too!`);
-    break;
-  //...  
-  default:
-      alert(`Hey${name}, that's not a valid option.`)
+let iAmWearingYellow = false
 
-}
+iAmWearingYellow ? "yes i am wearing yellow" : "no i am not";
+
+let number = 23;
+
+let num = (number = 23 || iAmWearingYellow) ? "number = 23 and yellow" : "number not 23 and/or not yellow"
+console.log(num)
