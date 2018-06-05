@@ -291,11 +291,19 @@
 
 let favMovies = ["Jumanji", "Benji"]
 let secondMovies = ["SpiderMan", "Infinity War"]
-let thridMovies = ["Dart Vader", "Empire Strikes Back"]
+let thirdMovies = ["Darth Vader", "Empire Strikes Back"]
 
-let favoriteMovies = [];
+let allMovies = [favMovies, secondMovies, thirdMovies]
 
-favoriteMovies.push(favMovies, secondMovies, thirdMovies);
+alert(allMovies);
 
-let titles = [];
-titles.push(favoriteMovies[0][0], favoriteMovies[1][0]);
+let unfavMovies = ["Jumanji", "Empire Strikes Back"]
+console.log(unfavMovies);
+alert(favMovies);
+
+// let favoriteMovies = [];
+//
+// favoriteMovies.push(favMovies, secondMovies, thirdMovies);
+//
+// let titles = [];
+// titles.push(favoriteMovies[0][0], favoriteMovies[1][0]);
