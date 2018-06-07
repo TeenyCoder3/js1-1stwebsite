@@ -1,92 +1,42 @@
-// let products = [["blanket", [12.99], "The best blanket around", [13.22], "rattle", [7.84], "The best rattle ever made", [10.25]]]
-//
-// //let i = 0;
-//
-// while (i < products.length) { //parameters
-//   //console.log(products[i]);
-//   i++; //Incrementor
-// }
-//
-// //console.log(i);
-//
-//
-// for(let i = products.length - 1; i >= 0; i--) {
-//   console.log(products[i]);
-// }
-//
-//
-// //while loop
-// let i = 0;
-// let newProduct = ["Squeeky Toy", 19.99, "Really good toy."];
-// do {
-//   // Add newProducts to the second member of the Products array
-//   if(i === 1) products[i].push(newProduct);
-//   i++;
-// } while(i < products.length);
-//
-// //console.log(Products);
-//
-//
-// products.forEach((product) => {
-//   console.log(product);
-// })
+// DAY5 TAKEHOME
 
+let todos = [];
 
+let todo1 = [prompt("What do you want to do first?", "Swimming")]
+let todo2 = [prompt("What do you want to do second?", "Eat")]
+let todo3 = [prompt("What do you want to do third?", "Coding")]
 
+todos.push(todo1, todo2, todo3);
 
-//FUNCTIONS
-function capitalCase(string) { //FUNCTION DEFINITION
-  let words = string.split(' ');
-  words.forEach(word) => {
-    let letters = word.split('');
-    let capped = letters[0].toUpperCase();
-    word.splice(0, 1, capped);
-  });
-  return words.join(' ');
-};
+for(let i = 0; i < todos.length; i++) {
 
+  let timeline = prompt(`How many days will it take to get ${todos[i][0]} done?`, "2");
 
-let newString = capitalCase("peter piper"); //function CALL
+  timeline = !isNaN(parseInt(timeline)) ?
+  parseInt(timeline) : 2;
 
-// console.log(newString);
+  todos[i].unshift(timeline);
+}
+console.log(todos, 'after adding time it will take');
 
-let capsName = capitalCase("captain america");
+todos.sort();
+console.log(todos, 'after sort');
 
-// console.log(capsName);
-
-
-// myCoolFunction("cheese");
-
-let myCoolFunction = function(stuff) => {
-  console.log(stuff);
+let longest = todos[0];
+let j = 0;
+while(j < todos.length) {
+  if(todos[j][0] > longest[0]) longest = todos[j]
+  // console.log(todos[j][1]);
+  j++;
 }
 
-let myCoolFunction = (stuff, things, etc) => {
-  console.log(stuff);
-}
+longest.push('this');
 
 
-function divide (arg1, arg2) {
-  return arg2 / arg1;
-}
-
-
-//TRY IT OUT DAY5
-function ageDog(years) {
-  if(!isNaN(years)) return years * 7;
-};
-
-alert(ageDog(pareInt(prompt("How old is your dog in years?", "3"))));
-
-
-const number = 80;
-
-function agePerson(years) {
-  return
-}
-
-function productUsedPerDay(days) {
-
-}
-
-prompt("How old are you currently?", "Less than 80");
+let z = 0;
+do {
+  if(todos[z][todos[z].length - 1] !== "this") {
+    todos[z].push("done");
+  }
+  z++;
+}while(z < todos.length);
