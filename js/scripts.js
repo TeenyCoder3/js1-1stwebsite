@@ -91,13 +91,20 @@ function parseString(string) {
 
 //Takehome 4.
 function reverseHalves(string) {
-  let firstHalf = string.subString(0, string.length / 2);
-  let secondHalf = string.subString(string.length / 2, string.length - 1);
+  let halfIndex = string.length / 2;
+  let firstHalf = string.subString(0, halfIndex);
+  let secondHalf = string.subString(halfIndex, string.length);
   alert(`${secondHalf}${firstHalf}`);
 }
 
-reverseHalves(prompt("give me a sentence", "hello world!"));
+// reverseHalves(prompt("give me a sentence", "hello world!"));
 
+//Takehome 5.
+function isPalindrome(string) {
+  let reversed = string.split('').reverse().join('')
+  if string === reversed) return true;
+  return false;
+}
 
 
 
