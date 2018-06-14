@@ -1,42 +1,34 @@
-// DAY5 TAKEHOME
+let body = document.getElementsByTagName('body'); //this will give you back an array.
+console.log(body);
 
-let todos = [];
+let classes = document.getElementsByClassName("my-header");
+console.log(classes[0]);
 
-let todo1 = [prompt("What do you want to do first?", "Swimming")]
-let todo2 = [prompt("What do you want to do second?", "Eat")]
-let todo3 = [prompt("What do you want to do third?", "Coding")]
+let id = document.getElementById("my-paragraph");
+console.log(id);
 
-todos.push(todo1, todo2, todo3);
+//Newer Methods:
+let tags = document.querySelector('body');
+console.log(tag);
 
-for(let i = 0; i < todos.length; i++) {
+let class = document.querySelector('.my-header');
+console.log(myClass);
 
-  let timeline = prompt(`How many days will it take to get ${todos[i][0]} done?`, "2");
+let myId = document.querySelector('#my-paragraph');
+console.log(myId);
 
-  timeline = !isNaN(parseInt(timeline)) ?
-  parseInt(timeline) : 2;
+let tags = document.querySelectorAll('body');
 
-  todos[i].unshift(timeline);
-}
-console.log(todos, 'after adding time it will take');
-
-todos.sort();
-console.log(todos, 'after sort');
-
-let longest = todos[0];
-let j = 0;
-while(j < todos.length) {
-  if(todos[j][0] > longest[0]) longest = todos[j]
-  // console.log(todos[j][1]);
-  j++;
-}
-
-longest.push('this');
-
-
-let z = 0;
-do {
-  if(todos[z][todos[z].length - 1] !== "this") {
-    todos[z].push("done");
+//Try it out day6
+function queryDom(methodName, element) {
+  switch(methodName.toLowerCase()) {
+    case 'getelementsbytagname';
+      document.getElementsByTagName(element);
+      break;
+    case 'querySelector':
+      document.querySelector(`.${element}`);
+      break;
+    default;
+      break;
   }
-  z++;
-}while(z < todos.length);
+};
