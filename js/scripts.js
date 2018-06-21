@@ -130,18 +130,153 @@
 
 //COUNTING FROM 1 TO 100
 //IMPORTANT!!
-let body = document.querySelector('body');
+// let body = document.querySelector('body');
+//
+// for (var i = 1, i <= 100, i++) {
+//   let p = document.createElement('p');
+//   if(i % 3 === 0 && i % 5 === 0) {
+//     p.textContent = 'FizzBuzz';
+//   } else if (i % 5 === 0) {
+//     p.textContent = 'Buzz';
+//   } else if (i % 3 === 0) {
+//     p.textContent = 'Fizz';
+//   } else {
+//     p.textContent = i;
+//   }
+//   body.appendChild(p);
+// }
 
-for (var i = 1, i <= 100, i++) {
-  let p = document.createElement('p');
-  if(i % 3 === 0 && i % 5 === 0) {
-    p.textContent = 'FizzBuzz';
-  } else if (i % 5 === 0) {
-    p.textContent = 'Buzz';
-  } else if (i % 3 === 0) {
-    p.textContent = 'Fizz';
-  } else {
-    p.textContent = i;
-  }
-  body.appendChild(p);
-}
+
+
+
+
+
+
+
+
+//DAY 9
+
+
+//
+// console.log();
+// let passwordInput = document.forms.login.password;
+// let emailInput = document.forms.login.email;
+// let myPTag = document.querySelector('#data_binding')
+// let submit = document.forms.login.submitBtn;
+// emailInput.addEventListener('keyup', e => {
+//   myPTag.textContent = e.target.value;
+// })
+//
+// submit.addEventListener('click', e => {
+//   if(passwordInput.value === '' || emailInput.value === '') {
+//     submit.disabled = false;
+//   }
+// })
+
+
+
+// let user = {
+//   name: "Henry",
+//   password: 12345,
+//   status: "active"
+// };
+//
+//
+// let guest = {
+//   name: "Guest",
+//   password: undefined,
+//   status: "inactive"
+// }
+//
+// let newScope = {
+//   name: "Peter Piper",
+//   password: "bag o peppers",
+//   instrument: "Pipes",
+//   myFunction: logMyName
+// }
+//
+// newScope.myFunction("Fly away"); //IMPLICIT
+//
+// function logMyName(greeting, ado) { // definition
+//   console.log(this.name, this.password);
+//   alert(`${greeting}, ${this.name}!`);
+// }
+// //
+// // logMyName.call(user, "Hello", "Goodbye");  //call site
+// // logMyName.call(guest, "Sign up", "Goodbye");
+//
+// let classScore = 90;
+//
+// const scopeOne = {
+//   classScore: 75,
+//   scopeTwo: {
+//     classScore: 50
+//   }
+// };
+//
+// console.log(classScore);
+// console.log(scopeOne.classScore);
+// console.log(scopeOne.scopeTwo.classScore);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//DAY 10
+
+
+
+
+// let object1 = {}
+// let object2 = new Object()
+//
+// let person = {
+//   firstName:"Angelica", //[firstname, "Angelica"]
+//   lastName: "Arellano"
+//   age: 14,
+//   favoritesL ["cookies", "pizza"],
+//   desc: {
+//     hairColor: "brown"
+//   }
+// }
+//
+// object1.food = "pizza";
+//
+// object1['color'] = 'pink';
+// console.log(object1)
+// console.log(object1.age)
+
+// for in
+
+// for(let key in person){
+//   console.log('key',key)
+// }
+
+
+
+//for .. of
+
+// for(let [key, value] of Object.entries(person)){
+//   console.log(key, values)
+// }
+
+// let newObj = Object.create(object1);
+// newObj.flower = 'rose';
+//
+// newObj.color = 'yellow';
+// console.log('newobj', newObj);
+// console.log('object1', object1);
