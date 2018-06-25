@@ -280,3 +280,116 @@
 // newObj.color = 'yellow';
 // console.log('newobj', newObj);
 // console.log('object1', object1);
+
+
+
+
+//
+// let recipe = {
+//   flour: '10 ox',
+//   eggs: 3,
+//   vanilla: true,
+//   rum: 'hella'
+// };
+//
+// console.log(recipe);
+// let clone = Object.create(recipe);
+// console.log(Object.getPrototypeOf(clone), '< This is the prototype');
+//
+//
+// let vehicle = {
+//   wheels: 4,
+//   windows: null,
+//   engineSize: '4 cylinder',
+//   doors: 4
+// };
+//
+// let motorcycle = Object.create(vehicle);
+// motorcycle.wheels = 2;
+//
+//
+// let stringExample = new String("hello there")
+// let arrayExample = new Number(94)
+// let objectExample =
+// let booleanExample =
+// let numberExample =
+//
+// // console.log(stringExample, arrayExample, objectExample, booleanExample, numberExample);
+//
+// function Spaceship(rockets, fluxCapacitor, pilot, blasters, shield, landingGear) {
+//   this.rockets = rockets;
+//   this.fluxcapacitor = fluxCapicitor;
+//   this.pilot = pilot;
+//   this.blasters = blasters;
+//   this.shield = shield;
+//   this.landingGear = landingGear;
+// };
+//
+// let firefly = new Spaceship(4, false, 'Mal Reynolds', Infinity, false, "broken");
+//
+// console.log(firefly.blasters);
+//
+// function Todo(name, dueDate, status, done, timeElapsed, dueByTime, peopleWith, priority, tags, label, necessaryWith) {
+//   this.name = name;
+// }
+
+
+
+// let username = document.forms.newUserForm.username.value;
+// let password = document.forms.newUserForm.password.value;
+// let submitBtn = document.querySelector('.btn');
+// console.log(userName, password)
+// function user(name, pw) {
+//   this.anem = name;
+//   this.pw = pw;
+// }
+//
+// submitBtn.addEventListener('click', e => {
+//   e.preventDefault();
+//   let username = document.forms.newUserForm.username.value;
+//   let password = document.forms.newUserForm.password.value;
+//   let newUser = new User(userName, password);
+//   users.push(newUser);
+//   document.forms.newUserform.reset();
+//   console.log(newUser);
+// })
+//
+// let advertisement = "HEY!!! WELCOME TO OUR SITE!!! GET 40% 0FF TODAY!!!!!";
+//
+// let myTimeout = setTimeout(() => {
+//     alert(advertisement);
+// },5000);
+//
+//   let cancelBtn = document.forms.newUserForm.cancelTimeout;
+//
+// console.log(cancelBtn);
+//
+//   cancelBtn.addEventListener('click', e => {
+//     clearTimeout(myTimeout);
+//   });
+
+let cart = [];
+
+function Product(name, price, description) {
+  this.name = name;
+  this.price = price;
+  this.description = description;
+};
+
+let soapBtn = document.forms.orderForm.soapBtn;
+
+soapBtn.addEventListener('click', e => {
+  e.preventDefault();
+  let soap = new Product("soap", 2.99, "makes you clean!");
+  cart.push(soap);
+  localStorage.setItem('soap', JSON.stringify(soap));
+});
+
+
+
+function getSoap() {
+  localStorage.getItem('soap');
+  console.log(JSON.parse(storedItem));
+}
+
+getSoap();
